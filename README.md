@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar site e agora vou gerenciar meus repositórios!
 
- <a href="https://joaovitormalta.github.io/html-css/desafios/desafio010/index.html"> Site do primeiro projeto com CursoemVideo </a> 
+ <a href="https://joaovitormalta.github.io/html-css/desafios/desafio010/index.html" target="_blank" rel="next"> Site do primeiro projeto com CursoemVideo </a> 
