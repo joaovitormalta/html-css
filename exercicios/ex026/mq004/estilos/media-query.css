@@ -2,6 +2,66 @@
 
 /* DEMAIS MÍDIAS */
 
+/* Typical Device Breakpoints 
+-----------------------------
+Celulares: até 600px
+Tablet Retrato(Portrait) e Grandes Celulares: 600px até 768px
+Tablet Paisagem(Landscape): 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: +1200px
+
+*/
+/* IMPRESSÃO */
 @media print {
-    
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Tá imprimindo né irmão?';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {display: none;}
+    img#print {display: block;}
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#pc {display: block;}
+}
+
+/* GRANDES TELAS */
+@media screen and (min-width: 1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tv {display: block;}
 }
